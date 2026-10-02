@@ -1,124 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portifolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jefferson Honório — Desenvolvedor Full Stack em Formação</title>
+  <meta name="description" content="Portfólio de Jefferson Honório, desenvolvedor full stack em formação. Projetos com Java/Spring Boot, React Native e Firebase." />
   <link rel="stylesheet" href="css/style.css" />
-  
-
 </head>
-
 <body>
 
-  <!-- Dentro dessa div esta todas as partiçoes dessa pagina -->
-  <!-- nao coloque muitas divs gerais eu fui so definindo muitas classes pois fiz na pressa -->
-  <div class="container">
-    <!-- essa é a parte do topo do meu portifolio -->
-    <header class="item header">Jefferson
-      <ul class="links-secoes">
-        <li><a href="#nav">inicio</a></li>
-        <li><a href="#main">sobre</a></li>
-        <li><a href="#footer">Contato</a></li>
-      </ul>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
-    </header>
-
-    <nav class="item nav" id="nav">
-      <img class="img-responsiva" src="./assets/icon/icon2.jpg" alt="imagem nav">
-      <div class="texto-nav">
-        <h3> Jefferson Honorio da Silva
-        </h3>
-
-      </div>
-
-    </nav>
-    <main class="item main" id="main">
-      <div>
-        <h1>Jefferson - 17 anos - Aspirante a Desenvolvedor</h1>
-
-        <p>Nascido e criado no coração do Rio de Janeiro, especificamente no bairro da Gamboa, carrego comigo a essência
-          e a determinação do povo carioca. Aos 17 anos, busco demonstrar uma maturidade e visão de futuro admiráveis.
-          <br>
-          <br>
-          Minha jornada na tecnologia ganhou forma através do curso técnico em Desenvolvimento de Sistemas, uma
-          oportunidade que abracei com dedicação total. Anteriormente, já havia buscado qualificação no SENAI Maracanã,
-          demonstrando desde cedo meu interesse pela área tecnológica e minha vontade de evoluir profissionalmente.
-          <br>
-          <br>
-        </p>
-        <h2 id="h2-main">Projetos</h2>
-        <p id="p-main">
-          No Momento sem nenhum projeto, mas logo terei.
-        </p>
-      </div>
-      
-    </main>
-    <section class="section item">
-      <h2>Minhas Habilidades</h2>
-      
-      
-      <div class="habilidades-devs">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Git</div>
-        <div class="card">Word intermediario</div>
-        <div class="card">Exel intermediario</div>
-        <div class="card">Pawer point intermediario</div>
-      </div>
-      
-      
-    
-      
-    </section>
-    <section class="section2 item">
-    
-      <h2>Meus Cursos</h2>
-      <div class="timeline-cursos">
-        <div class="curso-item">Operador de Computador</div>
-        <div class="curso-item">Educação Financeira</div>
-        <div class="curso-item">Criatividade Aplicada</div>
-        <div class="curso-item">DH Humano</div>
-        <div class="curso-item">Desenvolvimento de Jogos</div>
-        <div class="curso-item">Inglês Básico</div>
-        <div class="curso-item">Comunicação</div>
-  <div id="text2">
-  
-  
-</div>
-    
-            
-</section>
-
-
-    
-   <footer class="item footer" id="footer">
-    <div class="footer-content">
-        <h3>Contatos</h3>
-        
-        <div class="footer-links">
-           
-            
-           
-            
-            <a href="https://github.com/JeffersonSilva-23" target="_blank">
-                <img src="./assets/icon/github.png" alt="GitHub" class="icon-img">
-            </a>
-            <a href="mailto:honoriojefferson45@gmail.com">
-                <img src="./assets/icon/email.png" alt="E-mail" class="icon-img">
-            </a>
-        </div>
-        
-        <p>Desenvolvido por Jefferson Silva - 2025</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Página inicial de Jefferson Honório">JH</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-</footer>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero-inner">
+        <div class="hero-foto">
+          <img src="assets/foto.jpg" alt="Jefferson Honório sorrindo, usando camisa social" width="200" height="250" />
+        </div>
+        <div class="hero-texto">
+          <p class="eyebrow">Desenvolvedor Full Stack</p>
+          <h1 id="hero-titulo">Jefferson Honório da Silva</h1>
+          <p class="cargo">Técnico em Desenvolvimento de Sistemas — SENAI Maracanã</p>
+          <p class="resumo">
+            Desenvolvedor em formação com experiência prática em projetos full stack.
+            Back-end com Java e Spring Boot; front-end web e mobile com React e React Native.
+            Trabalho colaborativo com Git/GitHub, Pull Requests e code review.
+          </p>
+          <div class="botoes">
+            <a href="#projetos" class="btn btn-primario">Ver projetos</a>
+            <a href="#contato" class="btn btn-secundario">Entrar em contato</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <h2 id="sobre-titulo" class="secao-titulo">Sobre</h2>
+        <div class="secao-conteudo">
+          <p>
+            Estudante de Técnico em Desenvolvimento de Sistemas no SENAI Maracanã,
+            com mais de 900 das 1.200 horas do curso concluídas. Iniciei minha
+            formação em tecnologia pelo curso de Operador de Computador, também
+            no SENAI, antes de ingressar no Técnico.
+          </p>
+          <p>
+            Aplico os conhecimentos em projetos reais, trabalhando em equipe com
+            controle de versão, revisão de código e metodologias ágeis.
+            Atualmente em formação complementar de inglês pela Kultive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <h2 id="projetos-titulo" class="secao-titulo">Projetos</h2>
+
+        <article class="card-projeto" aria-labelledby="projeto-1-titulo">
+          <header class="card-header">
+            <h3 id="projeto-1-titulo">Hamburgueria Local</h3>
+            <span class="badge">Back-end</span>
+          </header>
+          <p class="card-sub">Projeto em grupo · 2026</p>
+          <p class="card-descricao">
+            Sistema de gestão para hamburgueria com módulos de Cardápio, Pedidos e Dashboard.
+            <strong>Minha contribuição:</strong> desenvolvimento do módulo de Pedidos,
+            implementação de endpoints REST com Spring Boot e integração com MySQL via JPA.
+          </p>
+          <ul class="tags" aria-label="Tecnologias utilizadas">
+            <li>Java 17</li><li>Spring Boot</li><li>MySQL</li><li>Maven</li><li>Git</li>
+          </ul>
+          <a href="https://github.com/Hamburgueria-Prj/Hamburgueria-Back-End"
+             target="_blank" rel="noopener" class="link">Ver repositório →</a>
+        </article>
+
+        <article class="card-projeto" aria-labelledby="projeto-2-titulo">
+          <header class="card-header">
+            <h3 id="projeto-2-titulo">Achados e Perdidos</h3>
+            <span class="badge">Mobile</span>
+          </header>
+          <p class="card-sub">Projeto acadêmico em grupo · 2026</p>
+          <p class="card-descricao">
+            Aplicativo colaborativo para cadastro, busca e devolução de itens perdidos.
+            <strong>Minha contribuição:</strong> formulário de publicação de itens com
+            captura de foto e localização, integrado ao Firebase Storage e Firestore.
+          </p>
+          <ul class="tags" aria-label="Tecnologias utilizadas">
+            <li>React Native</li><li>Firebase</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="habilidades" class="secao" aria-labelledby="habilidades-titulo">
+      <div class="container">
+        <h2 id="habilidades-titulo" class="secao-titulo">Habilidades técnicas</h2>
+        <ul class="tags tags-destaque" aria-label="Habilidades técnicas">
+          <li>Java 17</li><li>Spring Boot</li><li>JavaScript</li>
+          <li>React</li><li>React Native</li><li>HTML5</li><li>CSS3</li>
+          <li>MySQL</li><li>MongoDB</li><li>Firebase</li>
+          <li>Git &amp; GitHub</li><li>Swagger</li><li>JUnit</li>
+          <li>UML / DER</li><li>Scrum</li><li>Trello</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="formacao" class="secao" aria-labelledby="formacao-titulo">
+      <div class="container">
+        <h2 id="formacao-titulo" class="secao-titulo">Formação e cursos</h2>
+        <ul class="lista-formacao">
+          <li>
+            <div>
+              <strong>Técnico em Desenvolvimento de Sistemas</strong>
+              <span class="instituicao">SENAI Maracanã</span>
+            </div>
+            <span class="quando">Cursando · conclusão prevista 12/2026</span>
+          </li>
+          <li>
+            <div>
+              <strong>Inglês</strong>
+              <span class="instituicao">Kultive</span>
+            </div>
+            <span class="quando">Em andamento</span>
+          </li>
+          <li>
+            <div>
+              <strong>Formação para o Mundo do Trabalho</strong>
+              <span class="instituicao">Instituto da Providência</span>
+            </div>
+            <span class="quando">09/2025 – 12/2025 · 126h</span>
+          </li>
+          <li>
+            <div>
+              <strong>Operador de Computador</strong>
+              <span class="instituicao">SENAI / Instituto da Providência</span>
+            </div>
+            <span class="quando">06/2025 – 08/2025 · 180h</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="secao secao-contato" aria-labelledby="contato-titulo">
+      <div class="container">
+        <h2 id="contato-titulo" class="secao-titulo">Contato</h2>
+        <p class="contato-texto">
+          Aberto a oportunidades de estágio e vaga júnior em desenvolvimento.
+        </p>
+        <div class="contato-links">
+          <a href="mailto:honoriojefferson45@gmail.com" aria-label="Enviar e-mail">E-mail</a>
+          <a href="https://github.com/JeffersonSilva-23" target="_blank" rel="noopener" aria-label="Perfil no GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/jefferson-honorio-dev/" target="_blank" rel="noopener" aria-label="Perfil no LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" aria-label="Rodapé">
+    <div class="container">
+      <p class="fine">Jefferson Honório da Silva — 2026</p>
+    </div>
+  </footer>
 
 </body>
-
 </html>
-
-
-
-
